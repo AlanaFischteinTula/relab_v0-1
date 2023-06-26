@@ -8,13 +8,13 @@ import Image from "next/image";
 export function NavbarWithCTAButton() {
   return (
     <Navbar fluid rounded>
-      <div className="flex items-center justify-between">
+      <div className="grid place-items-center">
         <div className="flex items-center">
-          <Image className="logo mr-2" src="/img/logo-1.png" alt=">:[" width={50} height={50} />
-          <h1 className="text-2xl font-bold text-black">Relab</h1>
+          <Image className="logo mr-2 py-2" src="/img/logo-1.png" alt=">:[" width={50} height={50} />
+          <h1 className="px-0  text-2xl font-bold text-black">Relab</h1>
         </div>
-        <div className="">
-          <Button className=" bg-blue-500 rounded-full px-50 py-50 text-white text-sm">
+        <div className="absolute right-5">
+          <Button className=" bg-blue-500 rounded-half px-0 py- text-white text-sm">
             registrarse
           </Button>
         </div>
